@@ -16,7 +16,7 @@ function toggleActivity() {
 }
 
 function fetchApi() {
-    fetch('http://www.boredapi.com/api/activity/')
+    fetch('https://www.boredapi.com/api/activity/')
     .then(res => res.json())
     .then(data => {
         console.log(data);
