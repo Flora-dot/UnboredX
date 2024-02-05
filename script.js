@@ -20,8 +20,10 @@ function fetchApi() {
     .then(res => res.json())
     .then(data => {
         console.log(data);
+
         if(data.link){
-            activitycontainer.innerHTML = `<span class ='roboto'>Activity:</span><a href = ${data.link}><span class='montserrat bold animation'>${data.activity}</span>Learn more</a>`
+            activitycontainer.innerHTML = `<span class ='sixtyfour'>Activity:</span><a href = ${data.link}><span class='roboto animation'>${data.activity}</span></a>`
+
         }else{
             activity.innerHTML = `<span class ='sixtyfour'>Activity: </span><span class='roboto '>${data.activity}</span>`;
             type.innerHTML = `<span class ='sixtyfour'>Type: </span><span class='roboto'>${data.type}</span>`;
@@ -35,7 +37,9 @@ function fetchActivity(){
     if(activitycontainer.style.display = 'flex'){
         activitycontainer.style.display = 'flex';
         headingText.style.display = 'none';
+
         fetchApi();
+
     } else{
         activitycontainer.style.display = 'none';
         headingText.style.display = 'block';
@@ -44,6 +48,5 @@ function fetchActivity(){
 
 
  getActivityButton.addEventListener('click', toggleActivity,);
-//  getActivityButton.addEventListener('click', fetchApi);
  getActivityButton.addEventListener('click', fetchActivity);
 

@@ -23,12 +23,23 @@ body{
     background-color: var(--light-color);
 }
 
-h3 {
+.logo {
     font-family: var(--sixty-four);
     padding: 10px 15px 10px;
     color: var(--dark-color);
     font-size: 1.3rem;
+    animation: bounce 1s ease-in-out;
 }
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-10px); }
+    50% { transform: translateY(-0px); }
+    75% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+
 h3 img {
     width: 30px;
 }
