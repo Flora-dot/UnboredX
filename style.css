@@ -82,7 +82,8 @@ h1 {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
+    padding: 15px;
 }
 
 .animation {

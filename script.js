@@ -22,7 +22,7 @@ function fetchApi() {
         console.log(data);
 
         if(data.link){
-            activitycontainer.innerHTML = `<span class ='sixtyfour'>Activity:</span><a href = ${data.link}><span class='roboto animation'>${data.activity}</span></a>`
+            activitycontainer.innerHTML = `<span class ='sixtyfour'>Activity:</span><a href = ${data.link}><span class='roboto animation'>${data.activity}</span> --- Click to Learn More</a>`
 
         }else{
             activity.innerHTML = `<span class ='sixtyfour'>Activity: </span><span class='roboto '>${data.activity}</span>`;
